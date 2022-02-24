@@ -1,0 +1,74 @@
+.searchForm {
+    width: 310px;
+    margin: 0 auto;
+}
+
+.searchForm>input {
+    width: 210px;
+    height: 25px;
+    padding-left: 10px;
+    font-size: 16px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin-right: 15px;
+    transition: all 0.1s;
+}
+
+.searchForm>input:focus {
+    outline: 1.5px solid #1f66ff;
+}
+
+.searchForm>button {
+    width: 65px;
+    height: 26px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+.movieList {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: row wrap;
+  max-width: 75%;
+  margin: 0 auto;
+}
+
+.movieList>li {
+  position: relative;
+}
+
+.movieList h3 {
+  width: 150px;
+  text-align: center;
+  color: #fff;
+}
+
+.poster {
+  width: 165px;
+  height: 250px;
+  border-radius: 20px;
+  margin: 30px 0;
+}
+
+.hoverDesc {
+  opacity: 0;
+  position: absolute;
+  width: 165px;
+  height: 250px;
+  top: 0;
+  left: 0;
+  border-radius: 20px;
+  margin-top: 30px;
+  background: linear-gradient(155.45deg, rgba(11, 156, 175, 0.85) 0%, rgba(158, 28, 10, 0.85) 100%);
+  transition: all 0.2s linear;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.hoverDesc:hover {
+  opacity: 100%;
+}
