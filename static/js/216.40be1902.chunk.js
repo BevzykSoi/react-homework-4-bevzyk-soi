@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunkreact_homework_template=self.webpackChunkreact_homework_template||[]).push([[216],{7216:function(e,t,r){r.r(t);var a=r(184);t.default=function(){return(0,a.jsx)("h2",{style:{marginTop:"100px",fontSize:"36px",textAlign:"center",marginBottom:"30px"},children:" Error 404. Please, try again later."})}}}]);
+//# sourceMappingURL=216.40be1902.chunk.js.map
