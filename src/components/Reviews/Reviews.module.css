@@ -1,0 +1,29 @@
+.defaultTitle {
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 30px;
+}
+
+.reviewsList {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 0 auto;
+    list-style: none;
+}
+
+.reviewsList li {
+    margin-bottom: 50px;
+}
+
+.reviewsList h3 {
+    font-weight: normal;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 20px;
+}
+
+.reviewsList p {
+    font-size: 18px;
+    text-align: center;
+}

@@ -24,6 +24,11 @@
     font-size: 28px;
     text-decoration: none;
     color: #158ea3;
+    transition: all 0.2s;
+}
+
+.link:hover {
+    text-decoration: underline;
 }
 
 .activeLink {

@@ -1,0 +1,33 @@
+.castList {
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+    justify-content: space-between;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.castList li {
+    width: 200px;
+}
+
+.castList img {
+    width: 200px;
+    height: 300px;
+    border-radius: 20px;
+    border: none;
+}
+
+.actorDesc {
+    margin-top: 10px;
+    margin-bottom: 50px;
+}
+
+.castList h3{
+    font-weight: normal;
+    text-align: center;
+}
+
+.castList h3:not(:first-child) {
+    margin-top: 10px;
+}
