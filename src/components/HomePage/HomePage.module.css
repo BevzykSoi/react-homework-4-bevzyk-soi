@@ -16,6 +16,7 @@
 
 .movieList>li {
     position: relative;
+    max-width: 250px;
 }
 
 .movieList h3 {

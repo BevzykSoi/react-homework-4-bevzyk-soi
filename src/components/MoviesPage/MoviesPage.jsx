@@ -2,7 +2,7 @@ import axios from 'axios';
 import propTypes from 'prop-types';
 import { Component } from 'react';
 import styles from './MoviesPage.module.css';
-import { Link } from 'react-router-dom';
+import { Link, withRouter } from 'react-router-dom';
 import { TailSpin } from 'react-loader-spinner';
 
 import defaultMovie from '../../static/defaultMovie.jpg';
@@ -10,7 +10,7 @@ import defaultMovie from '../../static/defaultMovie.jpg';
 axios.defaults.baseURL = 'https://api.themoviedb.org/3';
 const API_KEY = '170b9b9397b0574b7d603cba918ea1f4';
 
-export default class MoviesPage extends Component {
+class MoviesPage extends Component {
   state = {
     query: '',
     movies: [],
@@ -24,7 +24,11 @@ export default class MoviesPage extends Component {
   handleSubmit = async event => {
     const { query } = this.state;
 
-    //event.preventDefault();
+    const { history, location } = this.props;
+
+    event.preventDefault();
+    
+    history.push(`${location.pathname}?query=${query}`);
 
     this.setState({ loading: true, });
 
@@ -117,3 +121,5 @@ export default class MoviesPage extends Component {
 MoviesPage.propTypes = {
   location: propTypes.object.isRequired,
 }
+
+export default withRouter(MoviesPage);
