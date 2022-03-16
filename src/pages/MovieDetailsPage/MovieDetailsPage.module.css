@@ -2,10 +2,13 @@
     display: flex;
     padding-top: 90px;
     color: #fff;
+    padding-bottom: 50px;
 }
 
 .movieMain {
     margin-left: 30px;
+    max-width: 500px;
+    margin-right: 100px;
 }
 
 .movieMain button {

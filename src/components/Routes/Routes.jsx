@@ -1,10 +1,10 @@
 import { lazy } from 'react';
 import { Route, Switch } from "react-router-dom";
 
-const HomePage = lazy(() => import('components/HomePage/HomePage'));
+const HomePage = lazy(() => import('pages/HomePage/HomePage'));
 const NotFound = lazy(() => import('components/NotFound/NotFound'));
-const MoviesPage = lazy(() => import('components/MoviesPage/MoviesPage'));
-const MovieDetailsPage = lazy(() => import('components/MovieDetailsPage/MovieDetailsPage'));
+const MoviesPage = lazy(() => import('pages/MoviesPage/MoviesPage'));
+const MovieDetailsPage = lazy(() => import('pages/MovieDetailsPage/MovieDetailsPage'));
 
 const Routes = () => {
     return (
